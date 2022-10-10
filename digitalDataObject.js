@@ -1,3 +1,4 @@
+//DigitalData Object
 {
     "digitalTouchpoint": {
         "category": {
@@ -13,14 +14,14 @@
     "event": [ // se incluye en el array de event cada nuevo evento que se va generando
         {
             "eventInfo": {
-                "key": "PageLoad",
-                "eventName": "PageLoad",
-                "pageID": "PLU",
-                "componentID": "PLU",
-                "timestamp": "2022-10-07T09:52:37.230Z"
+                "key": "PageLoad", //Nombre del evento ocurrido
+                "eventName": "PageLoad",  //Nombre del evento ocurrido
+                "pageID": "PLU", //Id de la página donde ha ocurrido el evento
+                "componentID": "PLU", 
+                "timestamp": "2022-10-07T09:52:37.230Z" //TimeStamp del momento en el que se ha añadido la información
             },
             "category": {
-                "primaryCategory": "Display"
+                "primaryCategory": "Display" // Dispositivo 
             },
             "attributes": []
         },
@@ -62,7 +63,7 @@
             }
         }
     ],
-    "page": {
+    "page": { // Información de página
         "category": {
             "primaryCategory": "PLURefX"
         },
@@ -89,7 +90,7 @@
             ]
         }
     ],
-    "transaction": {
+    "transaction": { //Información de la transacción
         "PNR": {
             "creationDate": "",
             "recLoc": "" //PNR localizador
@@ -107,19 +108,19 @@
                 }
             }
         },
-        "payment": [
+        "payment": [ //Información del pago
             {
                 "price": {
-                    "totalPrice": {
+                    "totalPrice": {  //Precio total (sumatorio)
                         "amount": 0,
                         "currency": ""
                     }
                 },
-                "methodOfPayment": ""
+                "methodOfPayment": "" //Método de pago escogido 
             }
         ]
     },
-    "traveller": [
+    "traveller": [ //Información del usuario
         {
             "firstName": "",
             "midName": "",
@@ -147,18 +148,18 @@
             "hasInfant": false
         }
     ],
-    "searchInput": {
+    "searchInput": { //Información de la búsqueda del usuario
         "category": {
             "primaryCategory": ""
         },
         "searchInputInfo": {
             "flightDetails": [
                 {
-                    "departure": {
-                        "locationCode": "",
+                    "departure": { //Información del origen
+                        "locationCode": "", 
                         "dateTime": ""
                     },
-                    "arrival": {
+                    "arrival": {  //Información del destino
                         "locationCode": "",
                         "dateTime": ""
                     },
