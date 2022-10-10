@@ -5,7 +5,7 @@
             "primaryCategory": "DigitalX" 
         },
         "touchpointInfo": {
-            "ClosestAirport": "MAD", //Origen 
+            "ClosestAirport": "MAD",
             "language": "ES", //Lenguaje
             "market": "ES", //Mercado
             "officeID": "PMIUX08AF" 
@@ -150,28 +150,63 @@
     ],
     "searchInput": { //Información de la búsqueda del usuario
         "category": {
-            "primaryCategory": ""
+            "primaryCategory": "R" //Tipo de ruta O => one way- R => Roundtrip - M => Multi destination
+
         },
         "searchInputInfo": {
             "flightDetails": [
                 {
-                    "departure": { //Información del origen
-                        "locationCode": "", 
-                        "dateTime": ""
+                    "departure": {
+                        "locationCode": "BIO",
+                        "dateTime": "2022-11-15",
+                        "cityCode": "BIO",
+                        "countryCode": "ES"
                     },
-                    "arrival": {  //Información del destino
-                        "locationCode": "",
-                        "dateTime": ""
+                    "arrival": {
+                        "locationCode": "MAD",
+                        "cityCode": "MAD",
+                        "countryCode": "ES"
                     },
-                    "tripType": "",
                     "passenger": [
                         {
-                            "numberOfPassengers": 0,
-                            "passengerTypeCode": ""
+                            "passengerTypeCode": "ADT",
+                            "numberOfPassengers": 1
                         }
-                    ]
+                    ],
+                    "commercialFareFamily": [
+                        {
+                            "code": "DIGITAL0"
+                        }
+                    ],
+                    "tripType": "R"
+                },
+                {
+                    "departure": {
+                        "locationCode": "MAD",
+                        "dateTime": "2022-11-19",
+                        "cityCode": "MAD",
+                        "countryCode": "ES"
+                    },
+                    "arrival": {
+                        "locationCode": "BIO",
+                        "cityCode": "BIO",
+                        "countryCode": "ES"
+                    },
+                    "passenger": [
+                        {
+                            "passengerTypeCode": "ADT",
+                            "numberOfPassengers": 1
+                        }
+                    ],
+                    "commercialFareFamily": [
+                        {
+                            "code": "DIGITAL0"
+                        }
+                    ],
+                    "tripType": "R"
                 }
-            ]
+            ],        
+        "dateTime": "2022-10-10T08:07:10.571Z",
         }
     }
 }
